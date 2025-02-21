@@ -1,0 +1,17 @@
+\contentsline {section}{Bevezetés}{3}{}%
+\contentsline {section}{\numberline {1}Használt Technológiák}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Backend}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}ASP.NET Core}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Adatbázis}{4}{}%
+\contentsline {subsection}{\numberline {1.3}Frontend}{4}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}React}{4}{}%
+\contentsline {subsection}{\numberline {1.4}Fejlesztői Eszközök}{4}{}%
+\contentsline {section}{\numberline {2}Projekt Felépítése}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Backend}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Frontend}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Adatbázis}{5}{}%
+\contentsline {section}{\numberline {3}Funkcionalitás}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Órarend Generálás}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Órarend Megtekintése és Módosítása}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Értesítések és Emlékeztetők}{6}{}%
+\contentsline {subsection}{\numberline {3.4}Statisztikák és Jelentések}{6}{}%
