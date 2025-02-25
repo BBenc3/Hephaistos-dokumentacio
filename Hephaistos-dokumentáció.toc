@@ -10,8 +10,11 @@
 \contentsline {subsection}{\numberline {2.1}Backend}{4}{}%
 \contentsline {subsection}{\numberline {2.2}Frontend}{5}{}%
 \contentsline {subsection}{\numberline {2.3}Adatbázis}{5}{}%
-\contentsline {section}{\numberline {3}Funkcionalitás}{5}{}%
-\contentsline {subsection}{\numberline {3.1}Órarend Generálás}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Órarend Megtekintése és Módosítása}{5}{}%
-\contentsline {subsection}{\numberline {3.3}Értesítések és Emlékeztetők}{6}{}%
-\contentsline {subsection}{\numberline {3.4}Statisztikák és Jelentések}{6}{}%
+\contentsline {section}{\numberline {3}Frontend Komponensek}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Home Oldal}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Navbar}{6}{}%
+\contentsline {section}{\numberline {4}Funkcionalitás}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Órarend Generálás}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Órarend Megtekintése és Módosítása}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Értesítések és Emlékeztetők}{6}{}%
+\contentsline {subsection}{\numberline {4.4}Statisztikák és Jelentések}{6}{}%
