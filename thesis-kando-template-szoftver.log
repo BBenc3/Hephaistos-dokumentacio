@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.23)  10 MAR 2025 08:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.23)  12 MAR 2025 08:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -807,7 +807,8 @@ Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchin
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
  (c:/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)) (./thesis-kando-template-szoftver.aux)
+))
+No file thesis-kando-template-szoftver.aux.
 \openout1 = `thesis-kando-template-szoftver.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -829,10 +830,8 @@ LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 Package hyperref Info: Link coloring ON on input line 67.
- (./thesis-kando-template-szoftver.out) (./thesis-kando-template-szoftver.out)
 \@outlinefile=\write6
 \openout6 = `thesis-kando-template-szoftver.out'.
-
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -938,40 +937,51 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
-<kando-logo-hu.pdf, id=99, 177.6738pt x 180.68504pt>
+<kando-logo-hu.pdf, id=7, 177.6738pt x 180.68504pt>
 File: kando-logo-hu.pdf Graphic file (type pdf)
 <use kando-logo-hu.pdf>
 Package pdftex.def Info: kando-logo-hu.pdf  used on input line 76.
 (pdftex.def)             Requested size: 177.67334pt x 180.6846pt.
-<figures/Logo.jpg, id=100, 1027.84pt x 1027.84pt>
-File: figures/Logo.jpg Graphic file (type jpg)
-<use figures/Logo.jpg>
-Package pdftex.def Info: figures/Logo.jpg  used on input line 76.
-(pdftex.def)             Requested size: 170.71652pt x 170.7155pt.
- [1
 
 
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./kando-logo-hu.pdf> <./figures/Logo.jpg>] (./thesis-kando-template-szoftver.toc)
+LaTeX Warning: File `figures/Logo.jpg' not found on input line 76.
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:76: Package pdftex.def Error: File `figures/Logo.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \maketitle
+               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 76.
+(c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [1
+
+
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./kando-logo-hu.pdf>]
+No file thesis-kando-template-szoftver.toc.
 \tf@toc=\write7
 \openout7 = `thesis-kando-template-szoftver.toc'.
 
- [2
+[2
 
 ]
 Overfull \hbox (13.40018pt too wide) in paragraph at lines 101--102
 \T1/lmr/m/n/12 A front-end fej-lesz-té-sé-hez a Re-act könyv-tá-rat hasz-nál-juk. A Re-act egy nép-sze-r¶ JavaScript-
  []
 
-[3]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 113.
- (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4]
+[3] [4]
 1. fejezet.
 [5
 
 ]
-<figures/rdb.png, id=157, 903.375pt x 788.9475pt>
+<figures/rdb.png, id=50, 903.375pt x 788.9475pt>
 File: figures/rdb.png Graphic file (type png)
 <use figures/rdb.png>
 Package pdftex.def Info: figures/rdb.png  used on input line 145.
@@ -1026,22 +1036,31 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `thesis-kando-template-szoftver.out' has not changed.
-(rerunfilecheck)             Checksum: B7127B0268E459D87E8890D2A2C9F7AC;4441.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `thesis-kando-template-szoftver.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis-kando-template-szoftver.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  B7127B0268E459D87E8890D2A2C9F7AC;4441.
  ) 
 Here is how much of TeX's memory you used:
- 37487 strings out of 474116
- 785477 string characters out of 5747717
+ 37471 strings out of 474116
+ 785271 string characters out of 5747717
  2030190 words of memory out of 5000000
- 59164 multiletter control sequences out of 15000+600000
- 622222 words of font info for 90 fonts, out of 8000000 for 9000
+ 59157 multiletter control sequences out of 15000+600000
+ 621548 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,7n,101p,1977b,1526s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis-kando-template-szoftver.pdf (12 pages, 544560 bytes).
+Output written on thesis-kando-template-szoftver.pdf (12 pages, 381773 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 283 compressed objects within 3 object streams
+ 227 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  104 named destinations out of 1000 (max. 500000)
- 212 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

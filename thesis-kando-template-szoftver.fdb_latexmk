@@ -1,11 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1741593449.55287 "c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex" "thesis-kando-template-szoftver.pdf" "thesis-kando-template-szoftver" 1741593451.49306 0
-  "c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex" 1741593445 20451 dc9d72bd1fb20f1b0140cb2c16977eca ""
+["pdflatex"] 1741762920.47504 "c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex" "thesis-kando-template-szoftver.pdf" "thesis-kando-template-szoftver" 1741762922.46455 2
+  "c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex" 1741762916 20451 dc9d72bd1fb20f1b0140cb2c16977eca ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1727071857 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1727071857 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727071555 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1727071087 1004 54797486969f23fa377b128694d548df ""
-  "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1727071087 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1727071087 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1727071087 928 2dc8d444221b7a635bb58038579b861a ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1727071087 908 2921f8a10601f252058503cc6570e581 ""
@@ -236,13 +235,13 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727072987 5513072 9c1fc38a7d970efa00aeae6b397bfedd ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727073143 8221518 48a04f576e5236adfaebaa13387b94d3 ""
   "c:/texlive/2024/texmf.cnf" 1727072965 713 e69b156964470283e0530f5060668171 ""
-  "figures/Logo.jpg" 1741588931 159701 5749470b2903d6e10b2e87cfef15e33f ""
+  "figures/Logo.jpg" 0 -1 0 ""
   "figures/rdb.png" 1741588931 15668 4e861e97447a830f5aff439f1a924c09 ""
   "kando-logo-hu.pdf" 1741588930 134952 21bfc08c8527d1c8110f13563fe54920 ""
-  "thesis-kando-template-szoftver.aux" 1741593451 4923 9c41ef81a02f4bb89d054326df2ee3bd "pdflatex"
-  "thesis-kando-template-szoftver.out" 1741593451 4441 b7127b0268e459d87e8890d2a2c9f7ac "pdflatex"
-  "thesis-kando-template-szoftver.tex" 1741593445 20451 dc9d72bd1fb20f1b0140cb2c16977eca ""
-  "thesis-kando-template-szoftver.toc" 1741593451 3020 af93404463295a3731ad7db2f81e51fa "pdflatex"
+  "thesis-kando-template-szoftver.aux" 1741762922 4923 9c41ef81a02f4bb89d054326df2ee3bd "pdflatex"
+  "thesis-kando-template-szoftver.out" 1741762922 4441 b7127b0268e459d87e8890d2a2c9f7ac "pdflatex"
+  "thesis-kando-template-szoftver.tex" 1741762916 20451 dc9d72bd1fb20f1b0140cb2c16977eca ""
+  "thesis-kando-template-szoftver.toc" 1741762922 3020 af93404463295a3731ad7db2f81e51fa "pdflatex"
   "thesis-kando.cls" 1741588931 14921 630b7895d52d6beaa1424fe066961bf5 ""
   (generated)
   "thesis-kando-template-szoftver.aux"
