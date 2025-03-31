@@ -7,22 +7,30 @@
 \select@language {magyar} \contentsline {subsubsection}{React}{4}{section*.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {0.1.4}Fejlesztői Eszközök}{4}{subsection.0.1.4}%
 \select@language {magyar} \contentsline {section}{\numberline {0.2}Projekt Felépítése}{4}{section.0.2}%
-\select@language {magyar} \contentsline {chapter}{\numberline {1}Relációs adatkezelő rendszerek}{5}{chapter.1}%
-\select@language {magyar} \contentsline {section}{\numberline {1.1}Relációs adatbázis}{5}{section.1.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.1.1}A relációs adatbáziskezelő rendszerek}{5}{subsection.1.1.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {1.1.2}MySQL és MariaDB, valamint PHPMyAdmin}{6}{subsection.1.1.2}%
-\select@language {magyar} \contentsline {chapter}{\numberline {2}React Fejlesztői Környezet}{8}{chapter.2}%
-\select@language {magyar} \contentsline {section}{\numberline {2.1}Bevezetés}{8}{section.2.1}%
-\select@language {magyar} \contentsline {section}{\numberline {2.2}React Fejlesztői Környezet}{8}{section.2.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.2.1}React Telepítése és Projektindítás}{8}{subsection.2.2.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.2.2}Fejlesztői Eszközök}{9}{subsection.2.2.2}%
-\select@language {magyar} \contentsline {subsubsection}{Visual Studio Code (VSCode)}{9}{section*.5}%
-\select@language {magyar} \contentsline {subsubsection}{React Developer Tools}{9}{section*.6}%
-\select@language {magyar} \contentsline {section}{\numberline {2.3}React Alapjai}{9}{section.2.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.3.1}Komponensek és JSX}{9}{subsection.2.3.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.3.2}Állapotkezelés a React-ben}{10}{subsection.2.3.2}%
-\select@language {magyar} \contentsline {subsubsection}{useState Hook}{10}{section*.7}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.3.3}Props}{11}{subsection.2.3.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.3.4}Komponensek Típusai}{11}{subsection.2.3.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.3.5}Életciklus Metódusok}{12}{subsection.2.3.5}%
-\select@language {magyar} \contentsline {section}{\numberline {2.4}Összefoglalás}{12}{section.2.4}%
+\select@language {magyar} \contentsline {section}{\numberline {0.3}Órarend Generátor Funkció}{5}{section.0.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {0.3.1}TimetableGenerator Osztály}{5}{subsection.0.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {0.3.2}TimetableGeneratorController Végpont}{6}{subsection.0.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {0.3.3}Felhasználói Élmény}{7}{subsection.0.3.3}%
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Relációs adatkezelő rendszerek}{8}{chapter.1}%
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Relációs adatbázis}{8}{section.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.1.1}A relációs adatbáziskezelő rendszerek}{8}{subsection.1.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.1.2}MySQL és MariaDB, valamint PHPMyAdmin}{9}{subsection.1.1.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}React Fejlesztői Környezet}{11}{chapter.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Bevezetés}{11}{section.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {2.2}React Fejlesztői Környezet}{11}{section.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.1}React Telepítése és Projektindítás}{11}{subsection.2.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.2}Fejlesztői Eszközök}{12}{subsection.2.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{Visual Studio Code (VSCode)}{12}{section*.5}%
+\select@language {magyar} \contentsline {subsubsection}{React Developer Tools}{12}{section*.6}%
+\select@language {magyar} \contentsline {section}{\numberline {2.3}React Alapjai}{12}{section.2.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.1}Komponensek és JSX}{12}{subsection.2.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.2}Állapotkezelés a React-ben}{13}{subsection.2.3.2}%
+\select@language {magyar} \contentsline {subsubsection}{useState Hook}{13}{section*.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.3}Props}{14}{subsection.2.3.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.4}Komponensek Típusai}{14}{subsection.2.3.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.5}Életciklus Metódusok}{15}{subsection.2.3.5}%
+\select@language {magyar} \contentsline {section}{\numberline {2.4}Összefoglalás}{15}{section.2.4}%
+\select@language {magyar} \contentsline {section}{\numberline {2.5}Jelszó Módosítása Funkció}{15}{section.2.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.1}ChangePasswordForm Komponens}{16}{subsection.2.5.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.2}Backend Integráció}{16}{subsection.2.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.3}Felhasználói Élmény}{17}{subsection.2.5.3}%

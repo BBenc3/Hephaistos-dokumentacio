@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.23)  12 MAR 2025 08:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.23)  31 MAR 2025 09:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -977,57 +977,598 @@ Overfull \hbox (13.40018pt too wide) in paragraph at lines 101--102
  []
 
 [3] [4]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 139.
+ [5] [6] [7]
 1. fejezet.
-[5
+[8
 
 ]
-<figures/rdb.png, id=50, 903.375pt x 788.9475pt>
+<figures/rdb.png, id=124, 903.375pt x 788.9475pt>
 File: figures/rdb.png Graphic file (type png)
 <use figures/rdb.png>
-Package pdftex.def Info: figures/rdb.png  used on input line 145.
+Package pdftex.def Info: figures/rdb.png  used on input line 227.
 (pdftex.def)             Requested size: 256.0748pt x 223.63649pt.
- [6 <./figures/rdb.png>]
+ [9 <./figures/rdb.png>]
 
-LaTeX Warning: Citation `Fazekas' on page 7 undefined on input line 149.
-
-
-LaTeX Warning: Reference `fig-melleklet1' on page 7 undefined on input line 151.
+LaTeX Warning: Citation `Fazekas' on page 10 undefined on input line 231.
 
 
-LaTeX Warning: Citation `Fazekas' on page 7 undefined on input line 152.
+LaTeX Warning: Reference `fig-melleklet1' on page 10 undefined on input line 233.
 
 
-LaTeX Warning: Citation `Tomacs' on page 7 undefined on input line 152.
+LaTeX Warning: Citation `Fazekas' on page 10 undefined on input line 234.
 
 
-LaTeX Warning: Citation `VartereszI1' on page 7 undefined on input line 154.
+LaTeX Warning: Citation `Tomacs' on page 10 undefined on input line 234.
 
-[7]
+
+LaTeX Warning: Citation `VartereszI1' on page 10 undefined on input line 236.
+
+[10]
 2. fejezet.
 (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-)
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 186.
- [8
+) [11
 
-] [9]
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 217.
+] [12]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 299.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [10{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-Overfull \hbox (2.37679pt too wide) in paragraph at lines 270--271
+) [13{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (2.37679pt too wide) in paragraph at lines 352--353
 []\T1/lmr/bx/n/12 Funkcion�lis kom-po-nen-sek\T1/lmr/m/n/12 : egy-sze-r� Ja-vaScript f�gg-v�-nyek, ame-lyek a \T1/lmtt/m/n/12 props\T1/lmr/m/n/12 -
  []
 
-[11]
-Overfull \hbox (55.37646pt too wide) in paragraph at lines 277--278
+[14]
+Overfull \hbox (55.37646pt too wide) in paragraph at lines 359--360
 \T1/lmr/m/n/12 Az osz-t�ly ala-p� kom-po-nen-sek t�-mo-gat-j�k az �let-cik-lus me-t�-du-so-kat, mint a \T1/lmtt/m/n/12 componentDidMount\T1/lmr/m/n/12 ,
  []
 
-[12] (./thesis-kando-template-szoftver.aux)
+[15]
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:400: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.400             alert('Az új 
+                                jelszavak nem egyeznek!');
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:400: LaTeX Error: Invalid UTF-8 byte "BA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.400             alert('Az új 
+                                jelszavak nem egyeznek!');
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó 
+                         módosítási logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó 
+                         módosítási logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó módosítási 
+                                       logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó módosítási 
+                                       logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó módosítási 
+                                       logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte "AD.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó módosítási 
+                                       logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó módosítási 
+                                       logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:403: LaTeX Error: Invalid UTF-8 byte "A1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403         // Jelszó módosítási 
+                                       logika
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:408: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...input type="password" placeholder="Régi 
+                                                  jelszó" onChange={(e) => ...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:408: LaTeX Error: Invalid UTF-8 byte "A9.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...input type="password" placeholder="Régi 
+                                                  jelszó" onChange={(e) => ...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:408: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...pe="password" placeholder="Régi jelszó"
+                                                   onChange={(e) => setOldPa...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:408: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...pe="password" placeholder="Régi jelszó"
+                                                   onChange={(e) => setOldPa...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:409: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ... <input type="password" placeholder="Új 
+                                                  jelszó" onChange={(e) => ...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:409: LaTeX Error: Invalid UTF-8 byte "9A.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ... <input type="password" placeholder="Új 
+                                                  jelszó" onChange={(e) => ...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:409: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...type="password" placeholder="Új jelszó"
+                                                   onChange={(e) => setNewPa...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:409: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...type="password" placeholder="Új jelszó"
+                                                   onChange={(e) => setNewPa...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ... <input type="password" placeholder="Új 
+                                                  jelszó megerősítése" o...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte "9A.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ... <input type="password" placeholder="Új 
+                                                  jelszó megerősítése" o...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...type="password" placeholder="Új jelszó 
+                                                  megerősítése" onChange=...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...type="password" placeholder="Új jelszó 
+                                                  megerősítése" onChange=...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...placeholder="Új jelszó megerősítése"
+                                                   onChange={(e) => setConfi...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte "91.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...placeholder="Új jelszó megerősítése"
+                                                   onChange={(e) => setConfi...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...placeholder="Új jelszó megerősítése"
+                                                   onChange={(e) => setConfi...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte "AD.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...placeholder="Új jelszó megerősítése"
+                                                   onChange={(e) => setConfi...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...placeholder="Új jelszó megerősítése"
+                                                   onChange={(e) => setConfi...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:410: LaTeX Error: Invalid UTF-8 byte "A9.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...placeholder="Új jelszó megerősítése"
+                                                   onChange={(e) => setConfi...
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ..." onClick={handleChangePassword}>Jelszó 
+                                                  módosítása</button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ..." onClick={handleChangePassword}>Jelszó 
+                                                  módosítása</button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...dleChangePassword}>Jelszó módosítása<
+                                                  /button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte "B3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...dleChangePassword}>Jelszó módosítása<
+                                                  /button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...dleChangePassword}>Jelszó módosítása<
+                                                  /button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte "AD.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...dleChangePassword}>Jelszó módosítása<
+                                                  /button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...dleChangePassword}>Jelszó módosítása<
+                                                  /button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+c:/Users/bbence/Documents/hephaistos-dokumentacio/thesis-kando-template-szoftver.tex:411: LaTeX Error: Invalid UTF-8 byte "A1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...dleChangePassword}>Jelszó módosítása<
+                                                  /button>
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+[16] [17] (./thesis-kando-template-szoftver.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1046,21 +1587,21 @@ Package rerunfilecheck Warning: File `thesis-kando-template-szoftver.out' has ch
 
 Package rerunfilecheck Info: Checksums for `thesis-kando-template-szoftver.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  B7127B0268E459D87E8890D2A2C9F7AC;4441.
+(rerunfilecheck)             After:  DC36957C392FBBBF8DD011B6B571F5E6;6268.
  ) 
 Here is how much of TeX's memory you used:
- 37471 strings out of 474116
- 785271 string characters out of 5747717
- 2030190 words of memory out of 5000000
- 59157 multiletter control sequences out of 15000+600000
+ 37657 strings out of 474116
+ 787989 string characters out of 5747717
+ 2113190 words of memory out of 5000000
+ 59242 multiletter control sequences out of 15000+600000
  621548 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,7n,101p,1977b,1526s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,7n,101p,1977b,2098s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis-kando-template-szoftver.pdf (12 pages, 381773 bytes).
+Output written on thesis-kando-template-szoftver.pdf (17 pages, 401616 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 205 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

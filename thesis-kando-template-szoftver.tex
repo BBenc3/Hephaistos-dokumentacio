@@ -118,6 +118,88 @@ A fejlesztés során különböző eszközöket használunk a hatékonyság növ
 \section{Projekt Felépítése}
 A Hephaistos projekt három fő komponensből áll: backend, frontend és adatbázis. Az alábbiakban bemutatjuk ezeknek a komponenseknek a felépítését és funkcióit.
 
+\section{Órarend Generátor Funkció}
+A Project Hephaistos backend tartalmaz egy órarend generátor funkciót, amely segíti a felhasználókat az optimális órarend összeállításában. Ez a funkció figyelembe veszi a felhasználó által teljesített tantárgyakat, a tantárgyak előfeltételeit, valamint az időbeli ütközéseket.
+
+\subsection{TimetableGenerator Osztály}
+A \texttt{TimetableGenerator} osztály felelős az órarend generálásáért. Az osztály a következő fő metódust tartalmazza:
+
+\begin{itemize}
+    \item \textbf{GenerateClosestTimetable}: Ez a metódus a megadott kreditszám alapján generál egy optimális órarendet. A metódus figyelembe veszi az elérhető tantárgyakat és az ütemezési konfliktusokat.
+\end{itemize}
+
+Az alábbi kód egy részletet mutat be a \texttt{GenerateClosestTimetable} metódusból:
+
+\begin{lstlisting}[language=JavaScript]
+public (IEnumerable<SubjectSchedule> Timetable, IEnumerable<Subject> OmittedSubjects) GenerateClosestTimetable(
+    int creditValue,
+    List<Subject> _availableSubjects,
+    List<SubjectSchedule> _existingSchedules
+) {
+    var selectedSubjects = new List<Subject>();
+    var omittedSubjects = new List<Subject>();
+    var selectedSchedules = new List<SubjectSchedule>();
+    int totalCredits = 0;
+
+    foreach (var subject in _availableSubjects) {
+        if (totalCredits + (subject.CreditValue ?? 0) > creditValue) {
+            omittedSubjects.Add(subject);
+            continue;
+        }
+
+        var subjectSchedules = _existingSchedules.Where(s => s.SubjectId == subject.Id).ToList();
+
+        if (!subjectSchedules.Any(schedule => IsOverlapping(schedule, selectedSchedules))) {
+            selectedSubjects.Add(subject);
+            selectedSchedules.AddRange(subjectSchedules);
+            totalCredits += subject.CreditValue ?? 0;
+        } else {
+            omittedSubjects.Add(subject);
+        }
+    }
+
+    return (selectedSchedules, omittedSubjects);
+}
+\end{lstlisting}
+
+\subsection{TimetableGeneratorController Végpont}
+A \texttt{TimetableGeneratorController} egy API végpontot biztosít az órarend generálásához. A végpont a következőképpen működik:
+
+\begin{itemize}
+    \item \textbf{POST /api/timetablegenerator/generate}: Ez a végpont fogadja a felhasználó által megadott kreditszámot, és visszaadja az optimális órarendet, valamint azokat a tantárgyakat, amelyek kimaradtak az ütemezésből.
+\end{itemize}
+
+Az alábbi kód egy részletet mutat be a végpont implementációjából:
+
+\begin{lstlisting}[language=JavaScript]
+[HttpPost("generate")]
+[Authorize]
+public async Task<IActionResult> GenerateTimetable([FromBody] int creditValue, [FromHeader(Name = "Authorization")] string Authorization) {
+    var userId = _jwtHelper.ExtractUserIdFromToken(Authorization);
+    var availableSubjects = GetAvailableSubjects(userId.Value);
+    var existingSchedules = _context.Subjectschedules
+        .Where(schedule => availableSubjects.Any(subject => subject.Id == schedule.SubjectId))
+        .ToList();
+
+    var (timetable, omittedSubjects) = _timetableGenerator.GenerateClosestTimetable(creditValue, availableSubjects, existingSchedules);
+
+    return Ok(new {
+        Timetable = timetable.Select(schedule => new {
+            SubjectName = schedule.Subject?.Name,
+            DayOfWeek = schedule.DayOfWeek,
+            StartTime = schedule.StartTime,
+            EndTime = schedule.EndTime
+        }),
+        OmittedSubjects = omittedSubjects.Select(subject => new {
+            SubjectName = subject.Name
+        })
+    });
+}
+\end{lstlisting}
+
+\subsection{Felhasználói Élmény}
+A funkció biztosítja, hogy a felhasználók egy könnyen értelmezhető órarendet kapjanak, amely tartalmazza az órák nevét, időpontját és napját. Az ütemezésből kimaradt tantárgyak külön listában jelennek meg, hogy a felhasználók tisztában legyenek azokkal a tantárgyakkal, amelyeket nem sikerült beilleszteni az órarendbe.
+
 \chapter{Relációs adatkezelő rendszerek}
 
 \section{Relációs adatbázis}
@@ -298,6 +380,57 @@ class Timer extends React.Component {
 
 \section{Összefoglalás}
 A React fejlesztői környezet és eszköztár megismerése elengedhetetlen a hatékony fejlesztési folyamat érdekében. A fenti fejezetekben bemutattuk a telepítést, az állapotkezelést, a komponenseket és azok életciklusát, valamint néhány fontos React fejlesztői eszközt.
+
+\section{Jelszó Módosítása Funkció}
+A React frontend alkalmazás tartalmaz egy jelszó módosítási funkciót, amely lehetővé teszi a felhasználók számára, hogy biztonságosan megváltoztassák a jelszavukat. Ez a funkció a következő komponensekből áll:
+
+\subsection{ChangePasswordForm Komponens}
+A \texttt{ChangePasswordForm} egy React komponens, amely biztosítja a jelszó módosításához szükséges űrlapot. Az űrlap tartalmaz mezőket a régi jelszó, az új jelszó és az új jelszó megerősítésének megadásához. Az alábbi kód egy részletet mutat be a komponensből:
+
+\begin{lstlisting}[language=JavaScript]
+import React, { useState } from 'react';
+
+function ChangePasswordForm() {
+    const [oldPassword, setOldPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
+    const handleChangePassword = () => {
+        if (newPassword !== confirmPassword) {
+            alert('Az új jelszavak nem egyeznek!');
+            return;
+        }
+        // Jelszó módosítási logika
+    };
+
+    return (
+        <form>
+            <input type="password" placeholder="Régi jelszó" onChange={(e) => setOldPassword(e.target.value)} />
+            <input type="password" placeholder="Új jelszó" onChange={(e) => setNewPassword(e.target.value)} />
+            <input type="password" placeholder="Új jelszó megerősítése" onChange={(e) => setConfirmPassword(e.target.value)} />
+            <button type="button" onClick={handleChangePassword}>Jelszó módosítása</button>
+        </form>
+    );
+}
+\end{lstlisting}
+
+\subsection{Backend Integráció}
+A jelszó módosítási funkció a backend API-val kommunikál, hogy ellenőrizze a régi jelszót és frissítse az új jelszót az adatbázisban. Az API végpontja a következő:
+
+\begin{lstlisting}[language=JavaScript]
+POST https://localhost:5001/change-password
+Headers: {
+    Authorization: Bearer <token>
+}
+Body: {
+    "oldPassword": "current_password",
+    "newPassword": "new_password"
+}
+\end{lstlisting}
+
+\subsection{Felhasználói Élmény}
+A funkció biztosítja, hogy a felhasználók értesítést kapjanak a sikeres vagy sikertelen jelszó módosításról. A hibák, például a nem egyező jelszavak vagy a helytelen régi jelszó, azonnal megjelennek az űrlapon.
+
 \end{document}
 
 
