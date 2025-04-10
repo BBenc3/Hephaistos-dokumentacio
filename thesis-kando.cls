@@ -195,9 +195,9 @@
 
 \if@thesiskando@nochanged@logo@%
     \@ifundefined{l@magyar}{}{%
-        \iflanguage{magyar}{\if@thesiskando@exists@logo@hu@\gdef\thesiskando@logo{\includegraphics{kando-logo-hu}}\fi}{}}%
+        \iflanguage{magyar}{\if@thesiskando@exists@logo@hu@\gdef\thesiskando@logo{\includegraphics[width=0.8\linewidth]{kando-logo-hu}}\fi}{}}%
     \@ifundefined{l@hungarian}{}{%
-        \iflanguage{hungarian}{\if@thesiskando@exists@logo@hu@\gdef\thesiskando@logo{\includegraphics{kando-logo-hu}}\fi}{}}%
+        \iflanguage{hungarian}{\if@thesiskando@exists@logo@hu@\gdef\thesiskando@logo{\includegraphics[width=0.8\linewidth]{kando-logo-hu}}\fi}{}}%
 \fi
 
 }

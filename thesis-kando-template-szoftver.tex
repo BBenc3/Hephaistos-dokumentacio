@@ -20,10 +20,31 @@
 \theoremstyle{remark}
 \newtheorem{megjegyzes}[tetel]{Megjegyzés}
 \newtheorem*{megoldas}{Megoldás}
+\usepackage[utf8]{inputenc}
 \usepackage[normalem]{ulem}
+\usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage[linguistics]{forest}
 \usepackage{stackengine,scalerel}
+
+\usepackage[utf8]{inputenc} % ha még nincs
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+	inputencoding=utf8,
+	extendedchars=true,
+	literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ö}{{\"o}}1 {ő}{{\H{o}}}1
+	{ú}{{\'u}}1 {ü}{{\"u}}1 {ű}{{\H{u}}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ö}{{\"O}}1 {Ő}{{\H{O}}}1
+	{Ú}{{\'U}}1 {Ü}{{\"U}}1 {Ű}{{\H{U}}}1,
+	breaklines=true,
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{blue},
+	commentstyle=\color{gray},
+	stringstyle=\color{teal}
+}
+
 
 % Define JavaScript language for listings
 \lstdefinelanguage{JavaScript}{
@@ -67,27 +88,32 @@
 \begin{document}
 
 
-\institute{Informatika és távközlés ágazat}
 \title{Project Hephaistos}
-\author{Biliczki Bence\\Fodor Valentin Sándor\\Szoftverfejlesztő és -tesztelő szak}
+
+\author{Biliczki Bence\\Fodor Valentin Sándor\\Szegedi Dávid\\Szoftverfejlesztő és -tesztelő szak}
+
 \supervisor{Kerényi Róbert Nándor\\oktató}
 \city{Miskolc}
 \date{2024}
+\begin{figure}[h]
+	\centering
+	\label{fig:minta}
+\end{figure}
 \maketitle
 
 \tableofcontents
 
 \pagebreak
 
-\section*{Bevezetés}
-\addcontentsline{toc}{section}{Bevezetés}
-A Project Hephaistos egy innovatív órarend-tervező alkalmazás, amelyet elsősorban egyetemisták számára fejlesztettünk. A célja, hogy hatékonyan segítse a hallgatókat az óráik, tanórán kívüli tevékenységeik és egyéb kötelezettségeik átlátható szervezésében. A projekt C\# nyelven íródott, és egy gépészmérnökhallgató kérésére készült, így különös figyelmet fordít a funkcionalitásra és a felhasználóbarát kialakításra. Az alkalmazás intelligens ütemezési megoldásokat kínál, figyelembe véve az egyéni preferenciákat, az egyetemi órarendet és az esetleges időbeli ütközéseket.
+\section*{Bevezetés} \addcontentsline{toc}{section}{Bevezetés}
+
+A Project Hephaistos egy innovatív, egyetemisták számára készült órarend-tervező alkalmazás, amely célja, hogy hatékonyan támogassa a hallgatókat az órák, tanórán kívüli tevékenységek és egyéb kötelezettségek rendszerezésében. Az alkalmazás C# nyelven készült, és egy gépészmérnökhallgató igényei alapján lett fejlesztve, különös figyelmet szentelve a funkcionalitásnak és a felhasználóbarát felületnek. Az intelligens ütemezési megoldások lehetővé teszik az egyéni preferenciák, az egyetemi órarend és az időbeli ütközések figyelembevételét.
 
 \section{Használt Technológiák}
 A Hephaistos projekt különböző technológiákat használ a backend és a frontend fejlesztéséhez, valamint az adatbázis kezeléséhez.
 
 \subsection{Backend}
-A backend a .NET Core keretrendszert használja, amely egy nyílt forráskódú, platformfüggetlen keretrendszer a modern, felhőalapú, internetkapcsolattal rendelkező alkalmazások fejlesztéséhez. A .NET Core lehetővé teszi a fejlesztők számára, hogy nagy teljesítményű és skálázható alkalmazásokat hozzanak létre.
+A backend a .NET Core keretrendszert használja, amely egy nyílt forráskódú, platformfüggetlen eszközkészlet a modern, felhőalapú, internetkapcsolattal rendelkező alkalmazások fejlesztéséhez. A .NET Core segítségével a fejlesztők nagy teljesítményű és skálázható alkalmazásokat hozhatnak létre.
 
 \subsubsection{ASP.NET Core}
 Az ASP.NET Core a .NET Core keretrendszer része, amelyet webalkalmazások és API-k fejlesztésére használnak. Az ASP.NET Core előnyei közé tartozik a magas teljesítmény, a platformfüggetlenség és a moduláris felépítés. Az ASP.NET Core támogatja a modern webfejlesztési szabványokat és eszközöket, mint például a dependency injection, a middleware-ek és a RESTful API-k.
@@ -101,7 +127,7 @@ Az adatok tárolására MySQL adatbázist használunk. A MySQL egy népszerű, n
 A frontend fejlesztéséhez a React könyvtárat használjuk. A React egy népszerű JavaScript-könyvtár, amelyet a felhasználói felületek egyszerűbb fejlesztésére használnak. A React lehetővé teszi a fejlesztők számára, hogy dinamikus és interaktív felhasználói felületeket hozzanak létre.
 
 \subsubsection{React}
-A React egy komponens-alapú JavaScript könyvtár, amelyet a Facebook fejlesztett ki és 2013-ban adtak ki. A React fő célja a felhasználói felületek egyszerűbb és hatékonyabb fejlesztése. A React lehetővé teszi a fejlesztők számára, hogy újrafelhasználható komponenseket hozzanak létre, amelyek könnyen karbantarthatók és bővíthetők.
+A React egy komponens-alapú JavaScript könyvtár, amelyet a Meta fejlesztett ki és 2013-ban adtak ki. A React fő célja a felhasználói felületek egyszerűbb és hatékonyabb fejlesztése. A React lehetővé teszi a fejlesztők számára, hogy újrafelhasználható komponenseket hozzanak létre, amelyek könnyen karbantarthatók és bővíthetők.
 
 A React egyik legfontosabb jellemzője a virtuális DOM (Document Object Model), amely javítja az alkalmazás teljesítményét azáltal, hogy minimalizálja a valódi DOM manipulációkat. A React támogatja a JSX (JavaScript XML) szintaxist, amely lehetővé teszi a HTML-szerű kód írását a JavaScript-ben, növelve a kód olvashatóságát és karbantarthatóságát.
 
@@ -228,33 +254,11 @@ A PHPMyAdmin előnye, hogy böngésző alapú, így bármilyen eszközről könn
 	\caption[dotNET]{Relációs adatbázis}
 \end{figure}
 \pagebreak
-\cite[102.~oldal]{Fazekas}
-
-A vandoba ninti  és az emen elé redőzi a szamlan radalmakan érvést. Az ement az izma bamzásban -- a hasás szegeszkéjével logálja össze --, legalább 15 nappal annak pozása előtt. Lásd: \ref{fig-melleklet1} melléklet ábrát. Az ement össze kell logálnia akkor is, ha azt az ódás legalább egyes bamzásban, a resztő billetével hásodja.
-\cite{Fazekas,Tomacs}
-\newline
-Ez pedig egy online irodalomjegyzék: \cite{VartereszI1}
-
-\begin{tetel}
-Tétel szövege.
-\end{tetel}
-
-\begin{proof}
-Bizonyítás szövege.
-\end{proof}
-
-\begin{definicio}
-Definíció szövege.
-\end{definicio}
-
-\begin{megjegyzes}
-Megjegyzés szövege.
-\end{megjegyzes}
 
 \chapter{React Fejlesztői Környezet}
 
 \section{Bevezetés}
-A React egy népszerű JavaScript-könyvtár, amelyet a felhasználói felületek egyszerűbb fejlesztésére használnak. Ezt a Facebook fejlesztette, és 2013-ban adták ki. Azóta széles körben alkalmazzák a webes fejlesztésben, különösen az egyoldalas alkalmazások (SPA) készítéséhez. Ez a szakdolgozat a React fejlesztői környezetek felépítését, a szükséges eszközöket és a hatékony fejlesztéshez szükséges alapelveket vizsgálja.
+A React egy népszerű JavaScript-könyvtár, amelyet a felhasználói felületek egyszerűbb fejlesztésére használnak. Ezt a Meta fejlesztette, és 2013-ban adták ki. Azóta széles körben alkalmazzák a webes fejlesztésben, különösen az egyoldalas alkalmazások (SPA) készítéséhez. Ez a szakdolgozat a React fejlesztői környezetek felépítését, a szükséges eszközöket és a hatékony fejlesztéshez szükséges alapelveket vizsgálja.
 
 \section{React Fejlesztői Környezet}
 Ebben a fejezetben bemutatjuk a React fejlesztői környezet telepítését, a szükséges eszközöket, valamint a React alapjait, hogy a fejlesztés hatékony és eredményes legyen.
@@ -281,8 +285,6 @@ A \texttt{create-react-app} gyorsan felállít egy alap React projektstruktúrá
 \subsection{Fejlesztői Eszközök}
 A React fejlesztéséhez számos fejlesztői eszköz áll rendelkezésünkre, amelyek növelhetik a termelékenységet és a hibakeresés hatékonyságát.
 
-\subsubsection{Visual Studio Code (VSCode)}
-A Visual Studio Code (VSCode) az egyik legnépszerűbb kódszerkesztő a React fejlesztéshez, számos bővítménnyel, például az \texttt{ESLint} és \texttt{Prettier} segítségével. Ezek az eszközök segítenek a kódformázásban és a hibák elkerülésében.
 
 \subsubsection{React Developer Tools}
 A React Developer Tools egy böngészőbővítmény, amely lehetővé teszi a React komponensek és állapotok ellenőrzését a böngészőben. Ez lehetővé teszi a hibakeresést, a komponensfa elemzését és az állapotok változásainak nyomon követését.
@@ -293,6 +295,34 @@ A React egy összetevő-alapú megközelítést alkalmaz, amelyben az alkalmazá
 \subsection{Komponensek és JSX}
 A React komponensek JavaScript függvények vagy osztályok, amelyek HTML-szerű kódot, úgynevezett JSX-et használnak. A JSX lehetővé teszi, hogy a JavaScript kódban HTML elemeket írjunk, ami növeli a kód olvashatóságát.
 
+\section*{Microsoft Azure Elérhetőség}
+\addcontentsline{toc}{section}{Microsoft Azure Elérhetőség}
+A Project Hephaistos alkalmazásunkat a Microsoft Azure felhőszolgáltatás segítségével publikáltuk, amely lehetővé teszi a skálázható és megbízható működést. Az Azure biztosítja az alkalmazás számára a szükséges infrastruktúrát, beleértve a webalkalmazás hosztolását, az adatbázis-kezelést és a biztonságos hozzáférést.
+
+Az alkalmazás elérhető az alábbi linken:  
+\url{https://hephaistos-backend-c6c5ewhraedvgzex.germanywestcentral-01.azurewebsites.net/index.html}
+
+\subsection*{Azure Szolgáltatások Használata}
+A projekt során az alábbi Azure szolgáltatásokat használtuk:
+\begin{itemize}
+    \item \textbf{Azure App Service}: Az alkalmazás hosztolására és futtatására használtuk. Ez egy teljesen menedzselt platform, amely lehetővé teszi a gyors telepítést és a folyamatos integrációt.
+    \item \textbf{Azure SQL Database}: Az alkalmazás adatainak tárolására és kezelésére szolgál. Ez egy skálázható, biztonságos és megbízható relációs adatbázis-kezelő rendszer.
+    \item \textbf{Azure Monitor}: Az alkalmazás teljesítményének és állapotának nyomon követésére használtuk. Ez segít az esetleges problémák gyors azonosításában és megoldásában.
+    \item \textbf{Azure Active Directory (AAD)}: A felhasználók hitelesítésére és az alkalmazás biztonságának növelésére használtuk.
+\end{itemize}
+
+\subsection*{Előnyök}
+A Microsoft Azure használata számos előnyt biztosít a projekt számára:
+\begin{itemize}
+    \item \textbf{Skálázhatóság}: Az alkalmazás könnyen skálázható a felhasználói igények növekedésével.
+    \item \textbf{Megerősített Biztonság}: Az Azure beépített biztonsági funkciói, például a titkosítás és a hozzáférés-szabályozás, garantálják az adatok védelmét.
+    \item \textbf{Globális Elérhetőség}: Az Azure globális adatközpont-hálózata lehetővé teszi az alkalmazás gyors és megbízható elérését a világ bármely pontjáról.
+    \item \textbf{Költséghatékonyság}: Az Azure rugalmas árazási modellje lehetővé teszi, hogy csak a ténylegesen használt erőforrásokért fizessünk.
+\end{itemize}
+
+A Microsoft Azure segítségével biztosítjuk, hogy a Project Hephaistos alkalmazás \href{https://projecthephaistos.azurewebsites.net/index.html} megbízhatóan és hatékonyan szolgálja ki a felhasználók igényeit.
+
+\addcontentsline{toc}{section}{Elérhetőség}
 \pagebreak
 
 \begin{lstlisting}[language=JavaScript]
@@ -355,31 +385,6 @@ A React komponensek két fő típusa:
 
 \pagebreak
 
-\subsection{Életciklus Metódusok}
-Az osztály alapú komponensek támogatják az életciklus metódusokat, mint a \texttt{componentDidMount}, \texttt{componentDidUpdate} és \texttt{componentWillUnmount}, amelyek lehetővé teszik a komponensek állapotának nyomon követését és kezelését a DOM-ba kerüléskor vagy az onnan való eltávolításkor.
-
-\begin{lstlisting}[language=JavaScript]
-class Timer extends React.Component {
-    componentDidMount() {
-        this.timerID = setInterval(() => this.tick(), 1000);
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.timerID);
-    }
-
-    tick() {
-        console.log("Timer ticking...");
-    }
-
-    render() {
-        return <h1>Timer Running</h1>;
-    }
-}
-\end{lstlisting}
-
-\section{Összefoglalás}
-A React fejlesztői környezet és eszköztár megismerése elengedhetetlen a hatékony fejlesztési folyamat érdekében. A fenti fejezetekben bemutattuk a telepítést, az állapotkezelést, a komponenseket és azok életciklusát, valamint néhány fontos React fejlesztői eszközt.
 
 \section{Jelszó Módosítása Funkció}
 A React frontend alkalmazás tartalmaz egy jelszó módosítási funkciót, amely lehetővé teszi a felhasználók számára, hogy biztonságosan megváltoztassák a jelszavukat. Ez a funkció a következő komponensekből áll:
@@ -388,30 +393,30 @@ A React frontend alkalmazás tartalmaz egy jelszó módosítási funkciót, amel
 A \texttt{ChangePasswordForm} egy React komponens, amely biztosítja a jelszó módosításához szükséges űrlapot. Az űrlap tartalmaz mezőket a régi jelszó, az új jelszó és az új jelszó megerősítésének megadásához. Az alábbi kód egy részletet mutat be a komponensből:
 
 \begin{lstlisting}[language=JavaScript]
-import React, { useState } from 'react';
-
-function ChangePasswordForm() {
-    const [oldPassword, setOldPassword] = useState('');
-    const [newPassword, setNewPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
-
-    const handleChangePassword = () => {
-        if (newPassword !== confirmPassword) {
-            alert('Az új jelszavak nem egyeznek!');
-            return;
-        }
-        // Jelszó módosítási logika
-    };
-
-    return (
-        <form>
-            <input type="password" placeholder="Régi jelszó" onChange={(e) => setOldPassword(e.target.value)} />
-            <input type="password" placeholder="Új jelszó" onChange={(e) => setNewPassword(e.target.value)} />
-            <input type="password" placeholder="Új jelszó megerősítése" onChange={(e) => setConfirmPassword(e.target.value)} />
-            <button type="button" onClick={handleChangePassword}>Jelszó módosítása</button>
-        </form>
-    );
-}
+	import React, { useState } from 'react';
+	
+	function ChangePasswordForm() {
+		const [oldPassword, setOldPassword] = useState('');
+		const [newPassword, setNewPassword] = useState('');
+		const [confirmPassword, setConfirmPassword] = useState('');
+		
+		const handleChangePassword = () => {
+			if (newPassword !== confirmPassword) {
+				alert('Az új jelszavak nem egyeznek!');
+				return;
+			}
+			// Jelszó módosítási logika
+		};
+		
+		return (
+		<form>
+		<input type="password" placeholder="Régi jelszó" onChange={(e) => setOldPassword(e.target.value)} />
+		<input type="password" placeholder="Új jelszó" onChange={(e) => setNewPassword(e.target.value)} />
+		<input type="password" placeholder="Új jelszó megerősítése" onChange={(e) => setConfirmPassword(e.target.value)} />
+		<button type="button" onClick={handleChangePassword}>Jelszó módosítása</button>
+		</form>
+		);
+	}
 \end{lstlisting}
 
 \subsection{Backend Integráció}
@@ -434,12 +439,8 @@ A funkció biztosítja, hogy a felhasználók értesítést kapjanak a sikeres v
 \end{document}
 
 
-
-\chapter*{Összegzés}
-\addcontentsline{toc}{chapter}{Összegzés}
-
-Lórum ipse olyan borzasztóan cogális patás, ami fogás nélkül nem varkál megfelelően.
-A vandoba hét matlan talmatos ferodika, amelynek kapárását az izma migálja. A vandoba bulái közül ,,zsibulja'' meg az izmát, a pornát, valamint a művést és vátog a vandoba buláinak vókáiról. Vókája a raktil prozása két emen között. Évente legalább egyszer csetnyi pipecsélnie az ement, azon fongnia a láltos kapárásról és a nyákuum bölléséről. A vandoba ninti és az emen elé redőzi a szamlan radalmakan érvést. Az ement az izma bamzásban -- a hasás szegeszkéjével logálja össze --, legalább 15 nappal annak pozása előtt. Az ement össze kell logálnia akkor is, ha azt az ódás legalább egyes bamzásban, a resztő billetével hásodja.
+\section{Összefoglalás}
+A React fejlesztői környezet és eszköztár megismerése elengedhetetlen a hatékony fejlesztési folyamat érdekében. A fenti fejezetekben bemutattuk a telepítést, az állapotkezelést, a komponenseket és azok életciklusát, valamint néhány fontos React fejlesztői eszközt.
 
 \newpage
 \Huge\begin{center}
@@ -447,7 +448,6 @@ A vandoba hét matlan talmatos ferodika, amelynek kapárását az izma migálja.
 \end{center}\normalsize
 Szeretnék köszönetet mondani mindazoknak, akik segítették a vizsgaremekem létrejöttét, külön megköszönve
 \newline\newline
-Lórum ipse olyan borzasztóan cogális patás, ami fogás nélkül nem varkál megfelelően. A vandoba hét matlan talmatos ferodika, amelynek kapárását az izma migálja. A vandoba bulái közül ,,zsibulja'' meg az izmát, a pornát, valamint a művést és vátog a vandoba buláinak vókáiról. Vókája a raktil prozása két emen között. Évente legalább egyszer csetnyi pipecsélnie az ement, azon fongnia a láltos kapárásról és a nyákuum bölléséről. A vandoba ninti és az emen elé redőzi a szamlan radalmakan érvést. Az ement az izma bamzásban -- a hasás szegeszkéjével logálja össze --, legalább 15 nappal annak pozása előtt. Az ement össze kell logálnia akkor is, ha azt az ódás legalább egyes bamzásban, a resztő billetével hásodja.
 
 \begin{figure}[ht!]
 	\centering
@@ -472,5 +472,14 @@ Lórum ipse olyan borzasztóan cogális patás, ami fogás nélkül nem varkál 
 
 % Ide lehet szkennelt dokumentumot, dokumentumokat beszúrni
 %\includepdf{}
+
+\chapter*{Források}
+\addcontentsline{toc}{chapter}{Források}
+Az alábbi források kerültek felhasználásra a szakdolgozat elkészítése során:
+\begin{itemize}
+    \item \textsc{Fazekas István}: \emph{Valószínűségszámítás}, Debreceni Egyetem, Debrecen, 2004.
+    \item \textsc{Tómács Tibor}: \emph{A valószínűségszámítás alapjai}, Líceum Kiadó, Eger, 2005.
+    \item \textsc{Várterész Magdolna}: \emph{Az informatika logika alapjai előadások}, 2006/07-es tanév 1.félév, \url{http://users.atw.hu/de-mi/index.php?r=file/download\&id=219}, Letöltve: 2019 március 12.-én.
+\end{itemize}
 
 \end{document}
